@@ -1,0 +1,252 @@
+body {
+    width: 100vw;
+    background: #EEEEEE;
+    box-sizing: border-box;
+}
+
+.contaiiner {
+    align-self: center;
+    width: 100vw;
+}
+
+.contaiiner .title {
+    align-self: center;
+    margin: 25px;
+    padding: 25px;
+    color: #32E0C4;
+}
+
+.contaiiner .flexcontainer {
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contaiiner .flexcontainer .cards {
+    align-self: center;
+    display: flex;
+    height: 200px;
+    border: 1px solid#32E0C4;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.line {
+    border: 1px solid #32E0C4;
+    width: 30vw;
+}
+
+.flexbox1 .card1 {
+    z-index: 1;
+}
+
+.flexbox1 .card2 {
+    z-index: 1;
+}
+
+.flexbox2 .card1 {
+    z-index: 1;
+}
+
+.flexbox2 .card2 {
+    z-index: 1;
+}
+
+.card {
+    background: #393E46;
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+    margin: 15px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: rgb(88 199 250 / 100%);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.card:hover {
+    border: 1px solid blue;
+    transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.flexbox1 .card1:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    transform: translate(250px, 50%) scale(2.5);
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 2;
+}
+
+.flexbox1 .card2:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    transform: translate(250px, -50%) scale(2.5);
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 2;
+}
+
+.flexbox2 .card1:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    transform: translate(-250px, 50%) scale(2.5);
+    transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 2;
+}
+
+.flexbox2 .card2:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    transform: translate(-250px, -50%) scale(2.5);
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 2;
+}
+
+
+/* 
+.card::after {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient( var(--rotate), #32E0C4, #393E46 63%, #393E46);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+} */
+
+
+/* .card::before {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient( var(--rotate), #32E0C4, #393E46 43%, #393E46);
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2.5s linear infinite;
+}  */
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+@media only screen and (max-width:1500px) {
+    body {
+        background-color: lightblue;
+    }
+    .card {
+        width: 400px;
+        /* height: 300px; */
+        font-size: 20px;
+    }
+    .flexbox1 .card1:hover {
+        transform: translate(220px, 40%) scale(2.5);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox1 .card2:hover {
+        transform: translate(220px, -0%) scale(2.3);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox2 .card1:hover {
+        transform: translate(-220px, 40%) scale(2.3);
+        transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox2 .card2:hover {
+        transform: translate(-220px, -40%) scale(2.3);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    .card {
+        width: 100px;
+        font-size: smaller;
+    }
+    .flexbox1 .card1:hover {
+        transform: translate(80px, 50%) scale(2.7);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox1 .card2:hover {
+        transform: translate(80px, -50%) scale(2.7);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox2 .card1:hover {
+        transform: translate(-80px, 50%) scale(2.7);
+        transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox2 .card2:hover {
+        transform: translate(-80px, -50%) scale(2.7);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+    .card{
+        width: 300px;
+    }
+    .flexbox1 .card1:hover {
+        transform: translate(170px, 50%) scale(2.2);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox1 .card2:hover {
+        transform: translate(170px, -50%) scale(2.2);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox2 .card1:hover {
+        transform: translate(-170px, 50%) scale(2.2);
+        transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox2 .card2:hover {
+        transform: translate(-170px, -50%) scale(2.2);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+}
+@media only screen and (max-width:992px) {
+    body {
+        background-color: lightblue;
+    }
+    .card {
+        width: 100px;
+        font-size: smaller;
+    }
+    .flexbox1 .card1:hover {
+        transform: translate(80px, 50%) scale(2.7);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox1 .card2:hover {
+        transform: translate(80px, -50%) scale(2.7);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox2 .card1:hover {
+        transform: translate(-80px, 50%) scale(2.7);
+        transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    .flexbox2 .card2:hover {
+        transform: translate(-80px, -50%) scale(2.7);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+}
