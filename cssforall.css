@@ -311,3 +311,70 @@ body {
         z-index: 2;
     }
 }
+/* -------------------- navbar -------------------------------- */
+header {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(235, 209, 154, 0.558));
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    /* background: black; */
+    margin-right: 50px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    box-sizing: border-box;
+    border-radius: 35%;
+}
+
+header img {
+    margin-left: 50px;
+    max-width: 30%;
+    z-index: 190;
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    margin: 0;
+    padding: 0px 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li:first-child a {
+    border-radius: 25px 0 0 25px;
+    padding-left: 25px;
+}
+
+header ul li:last-child a {
+    padding-right: 25px;
+    border-radius: 0 25px 25px 0;
+}
+
+header ul li a {
+    background-color: rgba(255, 255, 255, 0.144);
+    border: 5px solid transparent;
+    margin: 0;
+    padding: 5px 25px;
+    text-decoration: none;
+    color: white;
+    /* padding: 10px 15px; */
+}
