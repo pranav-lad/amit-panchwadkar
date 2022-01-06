@@ -1,0 +1,121 @@
+body,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid black;
+    background: linear-gradient(to right, rgba(234, 255, 0, 1), rgba(234, 255, 0, 0.983), rgba(238, 255, 56, 0.733));
+    width: 100%;
+    box-shadow: 0px 8px 18px rgba(252, 206, 206, 0.382);
+    border-radius: 0 0 5px 65px;
+    backdrop-filter: blur(40px);
+    z-index: 100;
+    font-family: sans-serif;
+    letter-spacing: 0.4px;
+}
+
+header nav .logo img {
+    width: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul {
+    text-decoration: none;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+
+header nav ul li:hover {
+    border-bottom: 2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+header nav ul li {
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+}
+
+header nav .hamburger {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 30px;
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.719);
+    backdrop-filter: blur(30px);
+}
+
+.content h1 {
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.content ul li {
+    margin: 30px 0px;
+    padding: 10px 5px;
+}
+
+.content ul li h2 {
+    width: 100%;
+    font-family: 'Trebuchet MS';
+    margin-left: 0.1%;
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.content img {
+    width: 60%;
+}
+
+@media only screen and (max-width:750px) {
+    .content img {
+        width: 90%;
+    }
+    header nav ul {
+        display: none;
+    }
+    header nav .hamburger {
+        visibility: visible;
+        display: flex;
+        border-radius: 50%;
+        margin-left: 150px;
+    }
+    header nav .hamburger .line {
+        background: black;
+        width: 30px;
+        height: 2px;
+        margin: 3px 2px;
+    }
+}
