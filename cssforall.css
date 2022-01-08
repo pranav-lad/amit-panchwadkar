@@ -1,0 +1,626 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #c122cf;
+    box-sizing: border-box;
+}
+
+.contaiiner {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    height: 100%;
+}
+
+.contaiiner .title {
+    align-self: center;
+    text-align: center;
+    margin: 25px;
+    padding: 15px;
+    color: #32E0C4;
+}
+
+.contaiiner .flexcontainer {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.head {
+    font-size: larger;
+}
+
+.contaiiner .flexcontainer .cards {
+    align-self: center;
+    display: flex;
+    height: 200px;
+    border: 1px solid#32E0C4;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.content {
+    color: white;
+    display: none;
+    text-align: left;
+    font-size: smaller;
+    width: fit-content;
+}
+
+.line {
+    border: 1px solid #32E0C4;
+    width: 30vw;
+}
+
+.flexbox1 .card1 {
+    z-index: 1;
+}
+
+.flexbox1 .card2 {
+    z-index: 1;
+}
+
+.flexbox2 .card1 {
+    z-index: 1;
+}
+
+.flexbox2 .card2 {
+    z-index: 1;
+}
+
+.card {
+    background: #393E46;
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+    margin: 15px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: rgb(88 199 250 / 100%);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.card:hover {
+    border: 1px solid blue;
+    transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.flexbox1 .card1:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    transform: translate(250px, 70%) scale(2.5);
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 2;
+}
+
+.flexbox1 .card1:hover .content {
+    display: inline;
+}
+
+.flexbox1 .card1:hover .head {
+    display: none;
+}
+
+.flexbox1 .card2:hover .content {
+    display: inline;
+}
+
+.flexbox1 .card2:hover .head {
+    display: none;
+}
+
+.flexbox2 .card1:hover .content {
+    display: inline;
+}
+
+.flexbox2 .card1:hover .head {
+    display: none;
+}
+
+.flexbox2 .card2:hover .content {
+    display: inline;
+}
+
+.flexbox2 .card2:hover .head {
+    display: none;
+}
+
+.flexbox1 .card2:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    transform: translate(250px, -35%) scale(2.5);
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 2;
+}
+
+.flexbox2 .card1:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    transform: translate(-250px, 70%) scale(2.5);
+    transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 2;
+}
+
+.flexbox2 .card2:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    transform: translate(-250px, -35%) scale(2.5);
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 2;
+}
+
+
+/* here onwords student_project.html */
+
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
+
+/* font-family: 'The Nautigal', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+header {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(235, 209, 154, 0.558));
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    /* background: black; */
+    margin-right: 50px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    box-sizing: border-box;
+    border-radius: 35%;
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    margin: 0;
+    padding: 0px 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li:first-child a {
+    border-radius: 25px 0 0 25px;
+    padding-left: 25px;
+}
+
+header ul li:last-child a {
+    padding-right: 25px;
+    border-radius: 0 25px 25px 0;
+}
+
+header ul li a {
+    background-color: rgba(255, 255, 255, 0.144);
+    border: 5px solid transparent;
+    margin: 0;
+    padding: 5px 25px;
+    text-decoration: none;
+    color: white;
+    /* padding: 10px 15px; */
+}
+
+@media only screen and (max-width: 968px) {
+    nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 968px) {
+    .menu-btn,
+    .menu-btn__burger {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    nav {
+        display: none;
+    }
+}
+
+nav {
+    background-color: #393E46;
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+}
+
+.menu-btn__burger {
+    width: 35px;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-10px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(10px);
+}
+
+
+/* ANIMATION */
+
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.bgcolor {
+    background-color: #f1f1f1;
+}
+
+
+/* css for lets connect */
+
+.container {
+    color: #999999;
+}
+
+.container .titleletsconnect {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: large;
+    font-weight: 750;
+    color: #393E46;
+}
+
+.container .flexforcards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .flexforcards .cards svg {
+    width: 100%;
+    color: #999999;
+}
+
+.container .flexforcards .cards {
+    width: 20%;
+    height: 10%;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container .maincontentflexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+}
+
+.maincontentflexbox .googleform {
+    width: 45%;
+    height: 350px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.maincontentflexbox .map {
+    width: 45%;
+    text-align: start;
+}
+
+.maincontentflexbox .map .heading {
+    font-size: large;
+    font-weight: 500;
+    color: #393E46;
+}
+
+.maincontentflexbox .googleform .heading {
+    font-size: large;
+    font-weight: 500;
+    color: #393E46;
+}
+
+
+
+.maincontentflexbox .map .mapimg img {
+    width: 100%;
+    text-align: start;
+}
+
+.container .socialmediahandle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.container .socialmediahandle svg {
+    margin: 0px 15px;
+}
+.googleform  iframe { 
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+    .card {
+        background: #0160f8;
+        width: 450px;
+    }
+    .flexbox1,
+    .flexbox2 {
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+    }
+    .flexbox1 .card1:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(250px, 50%) scale(2.3);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox1 .card2:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(200px, -50%) scale(2.3);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox2 .card1:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(-250px, 50%) scale(2.3);
+        transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox2 .card2:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(-250px, -50%) scale(2.3);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .card {
+        background: #000000;
+        width: 400px;
+    }
+    .flexbox1 .card1:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(250px, 50%) scale(2.3);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox1 .card2:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(250px, -50%) scale(2.3);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox2 .card1:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(-250px, 50%) scale(2.3);
+        transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox2 .card2:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(-250px, -50%) scale(2.3);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width:450px) {
+    .card {
+        background: #4c1d85;
+        width: 300px;
+    }
+    .flexbox1 .card1:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(150px, 50%) scale(2.2);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox1 .card2:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(150px, -50%) scale(2.2);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox2 .card1:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(-150px, 50%) scale(2.2);
+        transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox2 .card2:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(-150px, -50%) scale(2.2);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .content {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 450px) and (min-width:300px) {
+    .card {
+        background: #815dad;
+        width: 100px;
+        font-size: 15px;
+    }
+    .card .content h5 {
+        font-size: xx-small;
+    }
+    .card .content p {
+        font-size: xx-small;
+    }
+    .head {
+        font-size: x-small;
+    }
+    .flexbox1,
+    .flexbox2,
+    .flexcontainer {
+        justify-content: center;
+    }
+    .flexbox1 .card1:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(50px, 50%) scale(2.15) scaleX(1.21);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox1 .card2:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(50px, -50%) scale(2.15) scaleX(1.21);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox2 .card1:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(-50px, 50%) scale(2.15) scaleX(1.21);
+        transition: all .5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .flexbox2 .card2:hover {
+        color: rgb(88 199 250 / 100%);
+        transition: color 1s;
+        transform: translate(-50px, -50%) scale(2.15) scaleX(1.21);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 2;
+    }
+    .container .flexforcards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .container .maincontentflexbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .maincontentflexbox .googleform {
+        width: 100%;
+    }
+    .maincontentflexbox .map {
+        width: 100%;
+        text-align: start;
+    }
+    .maincontentflexbox .googleform button {
+        font-size: medium;
+        font-weight: 500;
+        color: #393E46;
+        width: fit-content;
+        margin: 15px;
+    }
+    .container .flexforcards .cards {
+        width: 100%;
+        flex-direction: row;
+        align-self: center;
+       justify-content: center;
+
+    }
+    
+.maincontentflexbox .googleform {
+    width: 100%;
+    height: 650px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.container .flexforcards .cards svg {
+    width: fit-content;
+    color: #999999;
+}
+}
