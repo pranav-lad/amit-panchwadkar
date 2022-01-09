@@ -53,6 +53,7 @@ body {
     text-align: left;
     font-size: smaller;
     width: fit-content;
+    padding-top: 60px;
 }
 
 .line {
@@ -138,7 +139,7 @@ body {
 }
 
 .flexbox1 .card2:hover {
-    color: rgb(88 199 250 / 100%);
+    color: rgb(97, 83, 21);
     transition: color 1s;
     transform: translate(250px, -35%) scale(2.5);
     transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
@@ -259,7 +260,7 @@ nav {
 
 .container {
     color: #999999;
-    padding-top: 00px;
+    padding-top: 70px;
 }
 
 .container .titleletsconnect {
@@ -278,6 +279,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-top: 0px;
 }
 
 .container .flexforcards .cards svg {
@@ -445,7 +447,7 @@ nav {
         z-index: 2;
     }
     .flexbox1 .card2:hover {
-        color: rgb(88 199 250 / 100%);
+        color: rgb(95, 78, 22);
         transition: color 1s;
         transform: translate(150px, -50%) scale(2.2);
         transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
@@ -558,6 +560,10 @@ nav {
     }
     .container .flexforcards .cards svg {
         width: fit-content;
+        color: #725a16;
+    }
+    .container {
         color: #999999;
+        padding-top: 40px;
     }
 }
