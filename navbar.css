@@ -3,11 +3,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 2px solid black;
+        /* border-bottom: 1px solid black; */
         /* background: linear-gradient(to right, rgba(234, 255, 0, 1), rgba(234, 255, 0, 0.983), rgba(238, 255, 56, 0.733)); */
-        background: linear-gradient(to right, rgb(243, 240, 196), rgba(241, 230, 166, 0.983), rgba(245, 245, 245, 0.733));
+        /* background: linear-gradient(to right, rgb(243, 240, 196), rgba(241, 230, 166, 0.983), rgba(245, 245, 245, 0.733)); */
+        background: rgb(206, 185, 92);
         width: 100%;
-        box-shadow: 0px 5px 10px rgba(196, 196, 196, 0.382);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.382);
         border-radius: 0 0 5px 65px;
         backdrop-filter: blur(40px);
         z-index: 100;
