@@ -18,10 +18,10 @@
     }
     
     header nav .logo img {
-        width: 70px;
-        padding: 0;
+        width: 260px;
+        padding: 5px;
         margin: 0;
-        margin-left: 35%;
+        margin-left: 15%;
     }
     
     header nav ul {
@@ -88,6 +88,12 @@
             width: 30px;
             height: 2px;
             margin: 3px 2px;
+        }
+        header nav .logo img {
+            width: 170px;
+            padding: 0px;
+            padding-top: 5px;
+            margin-left: 5%;
         }
     }
     
