@@ -13,6 +13,7 @@ body {
     /* background: rgb(129, 129, 224); */
     min-width: 340px;
     /* clip-path: polygon(0 18%, 100% 0, 100% 87%, 0% 100%); */
+    clip-path: polygon(100% 0, 100% 94%, 0 100%, 0 0);
     padding-top: 30px;
 }
 
@@ -217,5 +218,6 @@ body {
 @media (max-width: 768px) {
     .awards .cards {
         flex-direction: column;
+        height: 100vh;
     }
 }
